@@ -8,6 +8,14 @@ html{
     scroll-behavior: smooth;
 }
 
+.logo{
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(180deg);}
+}
+
+
 body{
     font-family: poppins;
 }
@@ -230,7 +238,7 @@ ul.about-content{
 }
 /* MSG AREA */
 .msg-area{
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(imgChairs.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(imgChairs.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -313,6 +321,7 @@ ul.contact-content{
     }
 }
 
+
 /* FOOTER */
 footer{
     display: flex;
@@ -324,7 +333,3 @@ footer{
     padding: 60px 0;
     margin-bottom: auto;
 }
-@media (max-width: 1000px){
-    .footer{
-
-    }
